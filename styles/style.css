@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* relative style */
+
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.black-color-50 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.orenge-color {
+  color: #e95a08;
+}
+
+/* navber style */
+
+.navber {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1140px;
+}
+
+.nav-item {
+  text-decoration: none;
+  margin-left: 3rem;
+}
+
+.item-color-1 {
+  color: #252432;
+}
+
+.item-color-2 {
+  color: #8987a1;
+}
+
+.item-color-3 {
+  color: black;
+}
+
+/* banner section styles */
+
+.banner-section {
+  display: flex;
+  max-width: 1140px;
+  margin: 120px auto;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.banner-discription {
+  font-size: 1.37rem;
+  font-weight: 400;
+}
+
+/* our plants styles */
+
+.our-plants {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.plant-title {
+  font-size: 3.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* cart styles */
+
+.cart {
+  max-width: 270px;
+  max-height: 484px;
+  text-align: center;
+}
+
+.cart img {
+  width: 100%;
+  height: 320px;
+}
+
+.cart-description {
+  margin: 10px auto;
+}
+
+.cart-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.cart-price {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.praimary-btn {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(233, 90, 8, 1);
+  border: none;
+  color: white;
+}
+
+.plant-cart {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+}
+
+/* Moble divice responsive */
+
+@media screen and (max-width: 576px) {
+  /* navber section */
+  .hight {
+    display: none;
+  }
+  .navber {
+    margin-top: 60px;
+  }
+
+  /* responsive banner section */
+  .banner-section {
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 65px;
+    margin-top: 30px;
+  }
+  .banner-section img {
+    order: -1;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  /* responsive cart section */
+
+  .plant-cart {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cart img {
+    height: 190px;
+  }
+}
