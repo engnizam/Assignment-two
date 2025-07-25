@@ -22,6 +22,12 @@ body {
   color: #e95a08;
 }
 
+.relative-title {
+  font-size: 3.12rem;
+  font-weight: 700;
+  margin: 0;
+}
+
 /* navber style */
 
 .navber {
@@ -141,12 +147,6 @@ body {
   align-items: center;
   margin: auto 0;
 }
-.flower-plant-lover-title {
-  margin-top: 40px;
-  font-size: 3.12rem;
-  font-weight: 700;
-  margin: 0;
-}
 
 .flower-plant-lover img {
   max-width: 540px;
@@ -157,13 +157,104 @@ body {
   margin-top: 20px;
 }
 
+/* latest deals section stules */
+
+.latest-deals-section-content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.latest-deal-card-title-first {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.latest-deal-card-title-secont {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.latest-deals-cart-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.latest-deal-cart-container {
+  display: flex;
+  max-width: 1140px;
+  max-height: 423px;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card1 {
+  background-image: url(../assets/deal-bloom.png);
+  margin-bottom: 25px;
+}
+
+.card2 {
+  background-image: url(../assets/deal-ana.png);
+}
+
+.card1,
+.card2 {
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  width: 367px;
+  height: 200px;
+  color: white;
+}
+
+.card1,
+.card2,
+.card3 {
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.card3 {
+  background-image: url(../assets/deal-zabo.png);
+  background-repeat: no-repeat;
+  width: 753px;
+  height: 423px;
+  border-radius: 12px;
+}
+
+.latest-deal-shop-1 {
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+.latest-deal-shop-2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+
+.btn-latest {
+  background: none;
+  border: none;
+}
+
 /* Moble divice responsive */
 
 @media screen and (max-width: 576px) {
   /* navber section */
+
   .hight {
     display: none;
   }
+
   .navber {
     margin-top: 60px;
   }
@@ -176,9 +267,11 @@ body {
     margin-bottom: 65px;
     margin-top: 30px;
   }
+
   .banner-section img {
     order: -1;
   }
+
   .banner-title {
     font-size: 1.5rem;
   }
@@ -188,17 +281,17 @@ body {
   .plant-cart {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .cart img {
     height: 190px;
   }
 
   /* Flower & Plants Lover section */
-  .flower-plant-lover{
+  .flower-plant-lover {
     margin-top: 40px;
   }
-  .flower-plant-lover img{
+
+  .flower-plant-lover img {
     margin-bottom: 20px;
   }
-
-
 }
