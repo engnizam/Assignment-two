@@ -23,9 +23,10 @@ body {
 }
 
 .relative-title {
-  font-size: 3.12rem;
+  font-size: 3.125rem;
   font-weight: 700;
   margin: 0;
+  position: static;
 }
 
 /* navber style */
@@ -160,7 +161,7 @@ body {
 /* latest deals section stules */
 
 .latest-deals-section-content {
-  margin: 0 auto;
+  margin: 120px auto;
   text-align: center;
 }
 
@@ -207,7 +208,7 @@ body {
 .card2 {
   background-repeat: no-repeat;
   border-radius: 14px;
-  width: 367px;
+  width: 360px;
   height: 200px;
   color: white;
 }
@@ -260,12 +261,12 @@ body {
   }
 
   /* responsive banner section */
+
   .banner-section,
-  .flower-plant-lover {
+  .latest-deal-cart-container,
+  .flower-plant-lover,
+  .latest-deal-cart-container {
     flex-direction: column;
-    margin: 0;
-    margin-bottom: 65px;
-    margin-top: 30px;
   }
 
   .banner-section img {
@@ -287,11 +288,29 @@ body {
   }
 
   /* Flower & Plants Lover section */
-  .flower-plant-lover {
-    margin-top: 40px;
-  }
 
   .flower-plant-lover img {
     margin-bottom: 20px;
+  }
+
+  /* Latest  Deals section */
+
+  .card3 {
+    max-width: 360px;
+    min-height: 200px;
+    margin: auto;
+  }
+  .card1,
+  .card2 {
+    margin: 20px auto;
+  }
+  .latest-deal-card-title-secont {
+    font-size: 1.2rem;
+  }
+  .latest-deals-section {
+    /* background-color: red; */
+    /* overflow: hidden; */
+    margin-top: 500px;
+    margin-bottom: 300px;
   }
 }
