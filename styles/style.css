@@ -125,6 +125,7 @@ body {
   background-color: rgba(233, 90, 8, 1);
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .plant-cart {
@@ -149,8 +150,13 @@ body {
   margin: auto 0;
 }
 
-.flower-plant-lover img {
+.flower-plant-lover-img {
   max-width: 540px;
+  max-height: 590px;
+}
+
+.flower-plant-lover img {
+  width: 100%;
 }
 
 .flower-plant-lover-list {
@@ -161,7 +167,7 @@ body {
 /* latest deals section stules */
 
 .latest-deals-section-content {
-  margin: 120px auto;
+  margin: 60px auto;
   text-align: center;
 }
 
@@ -247,6 +253,49 @@ body {
   border: none;
 }
 
+/* subscribe conten styles */
+
+.subscribe-conten {
+  max-width: 1440px;
+  height: 540px;
+  margin: 120px auto 50px;
+  display: flex;
+}
+
+.subscribe-img {
+  background-image: url(../assets/news-letter-bg.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-form {
+  margin-top: 195px;
+  align-items: center;
+}
+
+.subscribe-title {
+  font-size: 3.12rem;
+  font-weight: 700;
+  color: white;
+  margin: 20px auto;
+}
+
+.secount-btn {
+  width: 180px;
+}
+
+#email {
+  width: 640px;
+  height: 50px;
+  padding: 0 20px;
+}
+
 /* Moble divice responsive */
 
 @media screen and (max-width: 576px) {
@@ -312,5 +361,34 @@ body {
     /* overflow: hidden; */
     margin-top: 500px;
     margin-bottom: 300px;
+  }
+
+  /* subscribe content section */
+  .subscribe-title {
+    font-size: 1.2rem;
+  }
+  .subscribe-img {
+    width: 390px;
+    height: 170px;
+    margin: 0;
+  }
+  .subscribe-form {
+    margin: 0;
+  }
+  #email {
+    width: 160px;
+    height: 50px;
+  }
+  .secount-btn {
+    width: 80px;
+    height: 50px;
+  }
+  subscribe-form-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-conten {
+    margin: 0;
+    margin-top: 50px;
   }
 }
