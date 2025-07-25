@@ -349,7 +349,8 @@ body {
   .banner-section,
   .latest-deal-cart-container,
   .flower-plant-lover,
-  .latest-deal-cart-container {
+  .latest-deal-cart-container,
+  .footer-section {
     flex-direction: column;
   }
 
@@ -425,5 +426,10 @@ body {
     margin: 0;
     margin-top: 50px;
     height: 0px;
+  }
+
+  /* footer section */
+  .footer-section{
+    margin: 50px auto;
   }
 }
