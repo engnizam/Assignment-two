@@ -296,6 +296,41 @@ body {
   padding: 0 20px;
 }
 
+/* footer section styles */
+
+.footer-section {
+  max-width: 1120px;
+  height: 250px;
+  display: flex;
+  margin: 50px auto;
+  gap: 110px;
+}
+.footer-title {
+  width: 350px;
+}
+.footer-title-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+
+.footer-home {
+  display: flex;
+  text-decoration: none;
+  color: rgba(107, 114, 128, 1);
+  gap: 32px;
+}
+
+.footer-features a {
+  text-decoration: none;
+  color: rgba(107, 114, 128, 1);
+}
+
+.footer-logo {
+  display: flex;
+  gap: 24px;
+}
+
 /* Moble divice responsive */
 
 @media screen and (max-width: 576px) {
@@ -357,13 +392,12 @@ body {
     font-size: 1.2rem;
   }
   .latest-deals-section {
-    /* background-color: red; */
-    /* overflow: hidden; */
     margin-top: 500px;
     margin-bottom: 300px;
   }
 
   /* subscribe content section */
+
   .subscribe-title {
     font-size: 1.2rem;
   }
@@ -390,5 +424,6 @@ body {
   .subscribe-conten {
     margin: 0;
     margin-top: 50px;
+    height: 0px;
   }
 }
